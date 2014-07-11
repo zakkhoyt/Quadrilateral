@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C6B656BC1970731F0014DB69 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B656BB1970731F0014DB69 /* main.m */; };
+		C6B656BF1970731F0014DB69 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B656BE1970731F0014DB69 /* AppDelegate.m */; };
+		C6B656C21970731F0014DB69 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B656C11970731F0014DB69 /* ViewController.m */; };
+		C6B656C51970731F0014DB69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6B656C31970731F0014DB69 /* Main.storyboard */; };
+		C6B656C71970731F0014DB69 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6B656C61970731F0014DB69 /* Images.xcassets */; };
+		C6B656D31970731F0014DB69 /* QuadrilateralTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B656D21970731F0014DB69 /* QuadrilateralTests.m */; };
+		C6B65717197073500014DB69 /* AGKCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B656E21970734F0014DB69 /* AGKCorner.m */; };
+		C6B65719197073500014DB69 /* AGKLine.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B656E51970734F0014DB69 /* AGKLine.m */; };
+		C6B6571B197073500014DB69 /* AGKMath.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B656E81970734F0014DB69 /* AGKMath.m */; };
+		C6B6571D197073500014DB69 /* AGKQuad.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B656EB1970734F0014DB69 /* AGKQuad.m */; };
+		C6B6571F197073500014DB69 /* AGKVector3D.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B656EE1970734F0014DB69 /* AGKVector3D.m */; };
+		C6B65721197073500014DB69 /* CALayer+AGK+Methods.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B656F31970734F0014DB69 /* CALayer+AGK+Methods.m */; };
+		C6B65722197073500014DB69 /* CALayer+AGK+Properties.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B656F51970734F0014DB69 /* CALayer+AGK+Properties.m */; };
+		C6B65724197073500014DB69 /* CALayer+AGKQuad.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B656F81970734F0014DB69 /* CALayer+AGKQuad.m */; };
+		C6B65726197073500014DB69 /* NSValue+AGKQuad.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B656FB1970734F0014DB69 /* NSValue+AGKQuad.m */; };
+		C6B65728197073500014DB69 /* UIBezierPath+AGKQuad.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B656FE1970734F0014DB69 /* UIBezierPath+AGKQuad.m */; };
+		C6B65729197073500014DB69 /* UIImage+AGK+CATransform3D.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B657001970734F0014DB69 /* UIImage+AGK+CATransform3D.m */; };
+		C6B6572A197073500014DB69 /* UIImage+AGKQuad.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B657021970734F0014DB69 /* UIImage+AGKQuad.m */; };
+		C6B6572B197073500014DB69 /* UIView+AGK+AngleConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B657041970734F0014DB69 /* UIView+AGK+AngleConverter.m */; };
+		C6B6572D197073500014DB69 /* UIView+AGK+Properties.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B657071970734F0014DB69 /* UIView+AGK+Properties.m */; };
+		C6B6572F197073500014DB69 /* AGKCALayerAnimationBlockDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B6570C197073500014DB69 /* AGKCALayerAnimationBlockDelegate.m */; };
+		C6B65730197073500014DB69 /* AGKTransformPixelMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B6570E197073500014DB69 /* AGKTransformPixelMapper.m */; };
+		C6B65731197073500014DB69 /* CGGeometry+AGGeometryKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B65712197073500014DB69 /* CGGeometry+AGGeometryKit.m */; };
+		C6B65733197073500014DB69 /* CGImageRef+AGK+CATransform3D.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B65715197073500014DB69 /* CGImageRef+AGK+CATransform3D.m */; };
+		C6B65739197076B50014DB69 /* PointView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B65738197076B50014DB69 /* PointView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C6B656CD1970731F0014DB69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6B656AE1970731F0014DB69 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C6B656B51970731F0014DB69;
+			remoteInfo = Quadrilateral;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C6B656B61970731F0014DB69 /* Quadrilateral.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quadrilateral.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6B656BA1970731F0014DB69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6B656BB1970731F0014DB69 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C6B656BD1970731F0014DB69 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C6B656BE1970731F0014DB69 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C6B656C01970731F0014DB69 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C6B656C11970731F0014DB69 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C6B656C41970731F0014DB69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C6B656C61970731F0014DB69 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C6B656CC1970731F0014DB69 /* QuadrilateralTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuadrilateralTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6B656D11970731F0014DB69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6B656D21970731F0014DB69 /* QuadrilateralTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuadrilateralTests.m; sourceTree = "<group>"; };
+		C6B656DD1970734F0014DB69 /* AGGeometryKit-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AGGeometryKit-Prefix.pch"; sourceTree = "<group>"; };
+		C6B656DE1970734F0014DB69 /* AGGeometryKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGGeometryKit.h; sourceTree = "<group>"; };
+		C6B656DF1970734F0014DB69 /* AGKBitOperations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGKBitOperations.h; sourceTree = "<group>"; };
+		C6B656E01970734F0014DB69 /* AGKBitOperationsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGKBitOperationsTest.m; sourceTree = "<group>"; };
+		C6B656E11970734F0014DB69 /* AGKCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGKCorner.h; sourceTree = "<group>"; };
+		C6B656E21970734F0014DB69 /* AGKCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGKCorner.m; sourceTree = "<group>"; };
+		C6B656E31970734F0014DB69 /* AGKCornerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGKCornerTest.m; sourceTree = "<group>"; };
+		C6B656E41970734F0014DB69 /* AGKLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGKLine.h; sourceTree = "<group>"; };
+		C6B656E51970734F0014DB69 /* AGKLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGKLine.m; sourceTree = "<group>"; };
+		C6B656E61970734F0014DB69 /* AGKLineTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGKLineTest.m; sourceTree = "<group>"; };
+		C6B656E71970734F0014DB69 /* AGKMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGKMath.h; sourceTree = "<group>"; };
+		C6B656E81970734F0014DB69 /* AGKMath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGKMath.m; sourceTree = "<group>"; };
+		C6B656E91970734F0014DB69 /* AGKMathTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGKMathTest.m; sourceTree = "<group>"; };
+		C6B656EA1970734F0014DB69 /* AGKQuad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGKQuad.h; sourceTree = "<group>"; };
+		C6B656EB1970734F0014DB69 /* AGKQuad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGKQuad.m; sourceTree = "<group>"; };
+		C6B656EC1970734F0014DB69 /* AGKQuadTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGKQuadTest.m; sourceTree = "<group>"; };
+		C6B656ED1970734F0014DB69 /* AGKVector3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGKVector3D.h; sourceTree = "<group>"; };
+		C6B656EE1970734F0014DB69 /* AGKVector3D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGKVector3D.m; sourceTree = "<group>"; };
+		C6B656EF1970734F0014DB69 /* AGKVector3DTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGKVector3DTest.m; sourceTree = "<group>"; };
+		C6B656F11970734F0014DB69 /* AGGeometryKitCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGGeometryKitCategories.h; sourceTree = "<group>"; };
+		C6B656F21970734F0014DB69 /* CALayer+AGK+Methods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+AGK+Methods.h"; sourceTree = "<group>"; };
+		C6B656F31970734F0014DB69 /* CALayer+AGK+Methods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+AGK+Methods.m"; sourceTree = "<group>"; };
+		C6B656F41970734F0014DB69 /* CALayer+AGK+Properties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+AGK+Properties.h"; sourceTree = "<group>"; };
+		C6B656F51970734F0014DB69 /* CALayer+AGK+Properties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+AGK+Properties.m"; sourceTree = "<group>"; };
+		C6B656F61970734F0014DB69 /* CALayer+AGK+PropertiesTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+AGK+PropertiesTest.m"; sourceTree = "<group>"; };
+		C6B656F71970734F0014DB69 /* CALayer+AGKQuad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+AGKQuad.h"; sourceTree = "<group>"; };
+		C6B656F81970734F0014DB69 /* CALayer+AGKQuad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+AGKQuad.m"; sourceTree = "<group>"; };
+		C6B656F91970734F0014DB69 /* CALayer+AGKQuadTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+AGKQuadTest.m"; sourceTree = "<group>"; };
+		C6B656FA1970734F0014DB69 /* NSValue+AGKQuad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSValue+AGKQuad.h"; sourceTree = "<group>"; };
+		C6B656FB1970734F0014DB69 /* NSValue+AGKQuad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSValue+AGKQuad.m"; sourceTree = "<group>"; };
+		C6B656FC1970734F0014DB69 /* NSValue+AGKQuadTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSValue+AGKQuadTest.m"; sourceTree = "<group>"; };
+		C6B656FD1970734F0014DB69 /* UIBezierPath+AGKQuad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+AGKQuad.h"; sourceTree = "<group>"; };
+		C6B656FE1970734F0014DB69 /* UIBezierPath+AGKQuad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+AGKQuad.m"; sourceTree = "<group>"; };
+		C6B656FF1970734F0014DB69 /* UIImage+AGK+CATransform3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+AGK+CATransform3D.h"; sourceTree = "<group>"; };
+		C6B657001970734F0014DB69 /* UIImage+AGK+CATransform3D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+AGK+CATransform3D.m"; sourceTree = "<group>"; };
+		C6B657011970734F0014DB69 /* UIImage+AGKQuad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+AGKQuad.h"; sourceTree = "<group>"; };
+		C6B657021970734F0014DB69 /* UIImage+AGKQuad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+AGKQuad.m"; sourceTree = "<group>"; };
+		C6B657031970734F0014DB69 /* UIView+AGK+AngleConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AGK+AngleConverter.h"; sourceTree = "<group>"; };
+		C6B657041970734F0014DB69 /* UIView+AGK+AngleConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AGK+AngleConverter.m"; sourceTree = "<group>"; };
+		C6B657051970734F0014DB69 /* UIView+AGK+AngleConverterTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AGK+AngleConverterTest.m"; sourceTree = "<group>"; };
+		C6B657061970734F0014DB69 /* UIView+AGK+Properties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AGK+Properties.h"; sourceTree = "<group>"; };
+		C6B657071970734F0014DB69 /* UIView+AGK+Properties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AGK+Properties.m"; sourceTree = "<group>"; };
+		C6B657081970734F0014DB69 /* UIView+AGK+PropertiesTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AGK+PropertiesTest.m"; sourceTree = "<group>"; };
+		C6B6570A197073500014DB69 /* AGGeometryKitClasses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGGeometryKitClasses.h; sourceTree = "<group>"; };
+		C6B6570B197073500014DB69 /* AGKCALayerAnimationBlockDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGKCALayerAnimationBlockDelegate.h; sourceTree = "<group>"; };
+		C6B6570C197073500014DB69 /* AGKCALayerAnimationBlockDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGKCALayerAnimationBlockDelegate.m; sourceTree = "<group>"; };
+		C6B6570D197073500014DB69 /* AGKTransformPixelMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGKTransformPixelMapper.h; sourceTree = "<group>"; };
+		C6B6570E197073500014DB69 /* AGKTransformPixelMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGKTransformPixelMapper.m; sourceTree = "<group>"; };
+		C6B65710197073500014DB69 /* AGGeometryKitCoreGraphics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGGeometryKitCoreGraphics.h; sourceTree = "<group>"; };
+		C6B65711197073500014DB69 /* CGGeometry+AGGeometryKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CGGeometry+AGGeometryKit.h"; sourceTree = "<group>"; };
+		C6B65712197073500014DB69 /* CGGeometry+AGGeometryKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CGGeometry+AGGeometryKit.m"; sourceTree = "<group>"; };
+		C6B65713197073500014DB69 /* CGGeometry+AGGeometryKitTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CGGeometry+AGGeometryKitTest.m"; sourceTree = "<group>"; };
+		C6B65714197073500014DB69 /* CGImageRef+AGK+CATransform3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CGImageRef+AGK+CATransform3D.h"; sourceTree = "<group>"; };
+		C6B65715197073500014DB69 /* CGImageRef+AGK+CATransform3D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CGImageRef+AGK+CATransform3D.m"; sourceTree = "<group>"; };
+		C6B65737197076B50014DB69 /* PointView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointView.h; sourceTree = "<group>"; };
+		C6B65738197076B50014DB69 /* PointView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PointView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C6B656B31970731F0014DB69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6B656C91970731F0014DB69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C6B656AD1970731F0014DB69 = {
+			isa = PBXGroup;
+			children = (
+				C6B656B81970731F0014DB69 /* Quadrilateral */,
+				C6B656CF1970731F0014DB69 /* QuadrilateralTests */,
+				C6B656B71970731F0014DB69 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C6B656B71970731F0014DB69 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C6B656B61970731F0014DB69 /* Quadrilateral.app */,
+				C6B656CC1970731F0014DB69 /* QuadrilateralTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6B656B81970731F0014DB69 /* Quadrilateral */ = {
+			isa = PBXGroup;
+			children = (
+				C6B656DC1970734F0014DB69 /* Source */,
+				C6B656BD1970731F0014DB69 /* AppDelegate.h */,
+				C6B656BE1970731F0014DB69 /* AppDelegate.m */,
+				C6B656C01970731F0014DB69 /* ViewController.h */,
+				C6B656C11970731F0014DB69 /* ViewController.m */,
+				C6B656C31970731F0014DB69 /* Main.storyboard */,
+				C6B656C61970731F0014DB69 /* Images.xcassets */,
+				C6B656B91970731F0014DB69 /* Supporting Files */,
+				C6B65737197076B50014DB69 /* PointView.h */,
+				C6B65738197076B50014DB69 /* PointView.m */,
+			);
+			path = Quadrilateral;
+			sourceTree = "<group>";
+		};
+		C6B656B91970731F0014DB69 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C6B656BA1970731F0014DB69 /* Info.plist */,
+				C6B656BB1970731F0014DB69 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C6B656CF1970731F0014DB69 /* QuadrilateralTests */ = {
+			isa = PBXGroup;
+			children = (
+				C6B656D21970731F0014DB69 /* QuadrilateralTests.m */,
+				C6B656D01970731F0014DB69 /* Supporting Files */,
+			);
+			path = QuadrilateralTests;
+			sourceTree = "<group>";
+		};
+		C6B656D01970731F0014DB69 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C6B656D11970731F0014DB69 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C6B656DC1970734F0014DB69 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				C6B656DD1970734F0014DB69 /* AGGeometryKit-Prefix.pch */,
+				C6B656DE1970734F0014DB69 /* AGGeometryKit.h */,
+				C6B656DF1970734F0014DB69 /* AGKBitOperations.h */,
+				C6B656E01970734F0014DB69 /* AGKBitOperationsTest.m */,
+				C6B656E11970734F0014DB69 /* AGKCorner.h */,
+				C6B656E21970734F0014DB69 /* AGKCorner.m */,
+				C6B656E31970734F0014DB69 /* AGKCornerTest.m */,
+				C6B656E41970734F0014DB69 /* AGKLine.h */,
+				C6B656E51970734F0014DB69 /* AGKLine.m */,
+				C6B656E61970734F0014DB69 /* AGKLineTest.m */,
+				C6B656E71970734F0014DB69 /* AGKMath.h */,
+				C6B656E81970734F0014DB69 /* AGKMath.m */,
+				C6B656E91970734F0014DB69 /* AGKMathTest.m */,
+				C6B656EA1970734F0014DB69 /* AGKQuad.h */,
+				C6B656EB1970734F0014DB69 /* AGKQuad.m */,
+				C6B656EC1970734F0014DB69 /* AGKQuadTest.m */,
+				C6B656ED1970734F0014DB69 /* AGKVector3D.h */,
+				C6B656EE1970734F0014DB69 /* AGKVector3D.m */,
+				C6B656EF1970734F0014DB69 /* AGKVector3DTest.m */,
+				C6B656F01970734F0014DB69 /* Categories */,
+				C6B657091970734F0014DB69 /* Classes */,
+				C6B6570F197073500014DB69 /* CoreGraphics_Extensions */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		C6B656F01970734F0014DB69 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				C6B656F11970734F0014DB69 /* AGGeometryKitCategories.h */,
+				C6B656F21970734F0014DB69 /* CALayer+AGK+Methods.h */,
+				C6B656F31970734F0014DB69 /* CALayer+AGK+Methods.m */,
+				C6B656F41970734F0014DB69 /* CALayer+AGK+Properties.h */,
+				C6B656F51970734F0014DB69 /* CALayer+AGK+Properties.m */,
+				C6B656F61970734F0014DB69 /* CALayer+AGK+PropertiesTest.m */,
+				C6B656F71970734F0014DB69 /* CALayer+AGKQuad.h */,
+				C6B656F81970734F0014DB69 /* CALayer+AGKQuad.m */,
+				C6B656F91970734F0014DB69 /* CALayer+AGKQuadTest.m */,
+				C6B656FA1970734F0014DB69 /* NSValue+AGKQuad.h */,
+				C6B656FB1970734F0014DB69 /* NSValue+AGKQuad.m */,
+				C6B656FC1970734F0014DB69 /* NSValue+AGKQuadTest.m */,
+				C6B656FD1970734F0014DB69 /* UIBezierPath+AGKQuad.h */,
+				C6B656FE1970734F0014DB69 /* UIBezierPath+AGKQuad.m */,
+				C6B656FF1970734F0014DB69 /* UIImage+AGK+CATransform3D.h */,
+				C6B657001970734F0014DB69 /* UIImage+AGK+CATransform3D.m */,
+				C6B657011970734F0014DB69 /* UIImage+AGKQuad.h */,
+				C6B657021970734F0014DB69 /* UIImage+AGKQuad.m */,
+				C6B657031970734F0014DB69 /* UIView+AGK+AngleConverter.h */,
+				C6B657041970734F0014DB69 /* UIView+AGK+AngleConverter.m */,
+				C6B657051970734F0014DB69 /* UIView+AGK+AngleConverterTest.m */,
+				C6B657061970734F0014DB69 /* UIView+AGK+Properties.h */,
+				C6B657071970734F0014DB69 /* UIView+AGK+Properties.m */,
+				C6B657081970734F0014DB69 /* UIView+AGK+PropertiesTest.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		C6B657091970734F0014DB69 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C6B6570A197073500014DB69 /* AGGeometryKitClasses.h */,
+				C6B6570B197073500014DB69 /* AGKCALayerAnimationBlockDelegate.h */,
+				C6B6570C197073500014DB69 /* AGKCALayerAnimationBlockDelegate.m */,
+				C6B6570D197073500014DB69 /* AGKTransformPixelMapper.h */,
+				C6B6570E197073500014DB69 /* AGKTransformPixelMapper.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		C6B6570F197073500014DB69 /* CoreGraphics_Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C6B65710197073500014DB69 /* AGGeometryKitCoreGraphics.h */,
+				C6B65711197073500014DB69 /* CGGeometry+AGGeometryKit.h */,
+				C6B65712197073500014DB69 /* CGGeometry+AGGeometryKit.m */,
+				C6B65713197073500014DB69 /* CGGeometry+AGGeometryKitTest.m */,
+				C6B65714197073500014DB69 /* CGImageRef+AGK+CATransform3D.h */,
+				C6B65715197073500014DB69 /* CGImageRef+AGK+CATransform3D.m */,
+			);
+			path = CoreGraphics_Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C6B656B51970731F0014DB69 /* Quadrilateral */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6B656D61970731F0014DB69 /* Build configuration list for PBXNativeTarget "Quadrilateral" */;
+			buildPhases = (
+				C6B656B21970731F0014DB69 /* Sources */,
+				C6B656B31970731F0014DB69 /* Frameworks */,
+				C6B656B41970731F0014DB69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Quadrilateral;
+			productName = Quadrilateral;
+			productReference = C6B656B61970731F0014DB69 /* Quadrilateral.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C6B656CB1970731F0014DB69 /* QuadrilateralTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6B656D91970731F0014DB69 /* Build configuration list for PBXNativeTarget "QuadrilateralTests" */;
+			buildPhases = (
+				C6B656C81970731F0014DB69 /* Sources */,
+				C6B656C91970731F0014DB69 /* Frameworks */,
+				C6B656CA1970731F0014DB69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C6B656CE1970731F0014DB69 /* PBXTargetDependency */,
+			);
+			name = QuadrilateralTests;
+			productName = QuadrilateralTests;
+			productReference = C6B656CC1970731F0014DB69 /* QuadrilateralTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C6B656AE1970731F0014DB69 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Zakk Hoyt";
+				TargetAttributes = {
+					C6B656B51970731F0014DB69 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					C6B656CB1970731F0014DB69 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = C6B656B51970731F0014DB69;
+					};
+				};
+			};
+			buildConfigurationList = C6B656B11970731F0014DB69 /* Build configuration list for PBXProject "Quadrilateral" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C6B656AD1970731F0014DB69;
+			productRefGroup = C6B656B71970731F0014DB69 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C6B656B51970731F0014DB69 /* Quadrilateral */,
+				C6B656CB1970731F0014DB69 /* QuadrilateralTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C6B656B41970731F0014DB69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6B656C51970731F0014DB69 /* Main.storyboard in Resources */,
+				C6B656C71970731F0014DB69 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6B656CA1970731F0014DB69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C6B656B21970731F0014DB69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6B6571D197073500014DB69 /* AGKQuad.m in Sources */,
+				C6B656C21970731F0014DB69 /* ViewController.m in Sources */,
+				C6B6572B197073500014DB69 /* UIView+AGK+AngleConverter.m in Sources */,
+				C6B65739197076B50014DB69 /* PointView.m in Sources */,
+				C6B65728197073500014DB69 /* UIBezierPath+AGKQuad.m in Sources */,
+				C6B656BF1970731F0014DB69 /* AppDelegate.m in Sources */,
+				C6B656BC1970731F0014DB69 /* main.m in Sources */,
+				C6B65726197073500014DB69 /* NSValue+AGKQuad.m in Sources */,
+				C6B6572F197073500014DB69 /* AGKCALayerAnimationBlockDelegate.m in Sources */,
+				C6B65733197073500014DB69 /* CGImageRef+AGK+CATransform3D.m in Sources */,
+				C6B65724197073500014DB69 /* CALayer+AGKQuad.m in Sources */,
+				C6B65719197073500014DB69 /* AGKLine.m in Sources */,
+				C6B65729197073500014DB69 /* UIImage+AGK+CATransform3D.m in Sources */,
+				C6B65722197073500014DB69 /* CALayer+AGK+Properties.m in Sources */,
+				C6B6572D197073500014DB69 /* UIView+AGK+Properties.m in Sources */,
+				C6B6571B197073500014DB69 /* AGKMath.m in Sources */,
+				C6B6571F197073500014DB69 /* AGKVector3D.m in Sources */,
+				C6B65717197073500014DB69 /* AGKCorner.m in Sources */,
+				C6B65730197073500014DB69 /* AGKTransformPixelMapper.m in Sources */,
+				C6B65731197073500014DB69 /* CGGeometry+AGGeometryKit.m in Sources */,
+				C6B65721197073500014DB69 /* CALayer+AGK+Methods.m in Sources */,
+				C6B6572A197073500014DB69 /* UIImage+AGKQuad.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6B656C81970731F0014DB69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6B656D31970731F0014DB69 /* QuadrilateralTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C6B656CE1970731F0014DB69 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C6B656B51970731F0014DB69 /* Quadrilateral */;
+			targetProxy = C6B656CD1970731F0014DB69 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C6B656C31970731F0014DB69 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6B656C41970731F0014DB69 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C6B656D41970731F0014DB69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C6B656D51970731F0014DB69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C6B656D71970731F0014DB69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = Quadrilateral/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C6B656D81970731F0014DB69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = Quadrilateral/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C6B656DA1970731F0014DB69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Quadrilateral.app/Quadrilateral";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = QuadrilateralTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		C6B656DB1970731F0014DB69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Quadrilateral.app/Quadrilateral";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = QuadrilateralTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C6B656B11970731F0014DB69 /* Build configuration list for PBXProject "Quadrilateral" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6B656D41970731F0014DB69 /* Debug */,
+				C6B656D51970731F0014DB69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6B656D61970731F0014DB69 /* Build configuration list for PBXNativeTarget "Quadrilateral" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6B656D71970731F0014DB69 /* Debug */,
+				C6B656D81970731F0014DB69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C6B656D91970731F0014DB69 /* Build configuration list for PBXNativeTarget "QuadrilateralTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6B656DA1970731F0014DB69 /* Debug */,
+				C6B656DB1970731F0014DB69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C6B656AE1970731F0014DB69 /* Project object */;
+}
