@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>5934C64A-8AF8-4142-8B84-D1517067174F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Quadrilateral</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>FBB90723-47D2-47EF-AA7C-75C5D94F87D0</key>
+		<string>https://github.com/zakkhoyt/Quadrilateral.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Quadrilateral.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>FBB90723-47D2-47EF-AA7C-75C5D94F87D0</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/zakkhoyt/Quadrilateral.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>FBB90723-47D2-47EF-AA7C-75C5D94F87D0</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>FBB90723-47D2-47EF-AA7C-75C5D94F87D0</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Quadrilateral</string>
+		</dict>
+	</array>
+</dict>
+</plist>
