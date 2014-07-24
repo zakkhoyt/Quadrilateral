@@ -33,7 +33,11 @@ struct Quadrilateral{
 
 
 
-@interface ViewController ()
+@interface ViewController (){
+    CGFloat startX;
+    CGFloat startY;
+}
+
 
 @property (strong, nonatomic) UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet PointView *topLeftView;
@@ -71,8 +75,13 @@ struct Quadrilateral{
     UIImage *image = [UIImage imageNamed:@"skew"];
     self.imageView = [[UIImageView alloc]initWithImage:image];
     self.imageView.contentMode = UIViewContentModeScaleToFill;
-    self.imageView.frame = self.view.bounds;
+//    self.imageView.contentMode = UIViewContentModeCenter;
+    self.imageView.frame = CGRectMake(0, 0, image.size.width, image.size.height);
     self.imageView.backgroundColor = [UIColor greenColor];
+    
+    UIPanGestureRecognizer *panGesture = [[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(panHandler:)];
+    [self.view addGestureRecognizer:panGesture];
+
     [self.view addSubview:self.imageView];
     
     [self.view bringSubviewToFront:self.topLeftView];
@@ -82,9 +91,25 @@ struct Quadrilateral{
     [self.view bringSubviewToFront:self.resetButton];
     [self.view bringSubviewToFront:self.distortButton];
 }
-- (IBAction)buttonAction:(id)sender {
 
+-(void)panHandler:(UIPanGestureRecognizer*)recognizer{
+    CGPoint translation = [recognizer translationInView:recognizer.view.superview];
+    if(recognizer.state == UIGestureRecognizerStateBegan){
+        startX = recognizer.view.center.x;
+        startY = recognizer.view.center.y;
+    }
     
+    
+    self.imageView.center = CGPointMake(startX + translation.x,
+                                         startY + translation.y);
+}
+
+- (IBAction)resetButtonAction:(id)sender {
+    [self setupImage];
+}
+
+
+- (IBAction)buttonAction:(id)sender {
     
     Quadrilateral quadFrom;
     float scale = 1.0;
@@ -114,9 +139,6 @@ struct Quadrilateral{
         self.imageView.layer.transform = t;
     }];
 
-}
-- (IBAction)resetButtonAction:(id)sender {
-    [self setupImage];
 }
 
 
@@ -176,59 +198,5 @@ struct Quadrilateral{
     return transform; 
 }
 
-+ (CATransform3D)rectToQuad:(CGRect)rect
-                     quadTL:(CGPoint)topLeft
-                     quadTR:(CGPoint)topRight
-                     quadBL:(CGPoint)bottomLeft
-                     quadBR:(CGPoint)bottomRight
-{
-    return [self rectToQuad:rect quadTLX:topLeft.x quadTLY:topLeft.y quadTRX:topRight.x quadTRY:topRight.y quadBLX:bottomLeft.x quadBLY:bottomLeft.y quadBRX:bottomRight.x quadBRY:bottomRight.y];
-}
-
-+ (CATransform3D)rectToQuad:(CGRect)rect
-                    quadTLX:(CGFloat)x1a
-                    quadTLY:(CGFloat)y1a
-                    quadTRX:(CGFloat)x2a
-                    quadTRY:(CGFloat)y2a
-                    quadBLX:(CGFloat)x3a
-                    quadBLY:(CGFloat)y3a
-                    quadBRX:(CGFloat)x4a
-                    quadBRY:(CGFloat)y4a
-{
-    CGFloat X = rect.origin.x;
-    CGFloat Y = rect.origin.y;
-    CGFloat W = rect.size.width;
-    CGFloat H = rect.size.height;
-    
-    CGFloat y21 = y2a - y1a;
-    CGFloat y32 = y3a - y2a;
-    CGFloat y43 = y4a - y3a;
-    CGFloat y14 = y1a - y4a;
-    CGFloat y31 = y3a - y1a;
-    CGFloat y42 = y4a - y2a;
-    
-    CGFloat a = -H*(x2a*x3a*y14 + x2a*x4a*y31 - x1a*x4a*y32 + x1a*x3a*y42);
-    CGFloat b = W*(x2a*x3a*y14 + x3a*x4a*y21 + x1a*x4a*y32 + x1a*x2a*y43);
-    CGFloat c = H*X*(x2a*x3a*y14 + x2a*x4a*y31 - x1a*x4a*y32 + x1a*x3a*y42) - H*W*x1a*(x4a*y32 - x3a*y42 + x2a*y43) - W*Y*(x2a*x3a*y14 + x3a*x4a*y21 + x1a*x4a*y32 + x1a*x2a*y43);
-    
-    CGFloat d = H*(-x4a*y21*y3a + x2a*y1a*y43 - x1a*y2a*y43 - x3a*y1a*y4a + x3a*y2a*y4a);
-    CGFloat e = W*(x4a*y2a*y31 - x3a*y1a*y42 - x2a*y31*y4a + x1a*y3a*y42);
-    CGFloat f = -(W*(x4a*(Y*y2a*y31 + H*y1a*y32) - x3a*(H + Y)*y1a*y42 + H*x2a*y1a*y43 + x2a*Y*(y1a - y3a)*y4a + x1a*Y*y3a*(-y2a + y4a)) - H*X*(x4a*y21*y3a - x2a*y1a*y43 + x3a*(y1a - y2a)*y4a + x1a*y2a*(-y3a + y4a)));
-    
-    CGFloat g = H*(x3a*y21 - x4a*y21 + (-x1a + x2a)*y43);
-    CGFloat h = W*(-x2a*y31 + x4a*y31 + (x1a - x3a)*y42);
-    CGFloat i = W*Y*(x2a*y31 - x4a*y31 - x1a*y42 + x3a*y42) + H*(X*(-(x3a*y21) + x4a*y21 + x1a*y43 - x2a*y43) + W*(-(x3a*y2a) + x4a*y2a + x2a*y3a - x4a*y3a - x2a*y4a + x3a*y4a));
-    
-    const double kEpsilon = 0.0001;
-    
-    if(fabs(i) < kEpsilon)
-    {
-        i = kEpsilon* (i > 0 ? 1.0 : -1.0);
-    }
-    
-    CATransform3D transform = {a/i, d/i, 0, g/i, b/i, e/i, 0, h/i, 0, 0, 1, 0, c/i, f/i, 0, 1.0};
-    
-    return transform;
-}
 
 @end
