@@ -35,8 +35,8 @@
         startY = recognizer.view.center.y;
     }
 
-    UIImage *image = [self getTarget];
-    self.zoomImageView.image = image;
+//    UIImage *image = [self getTarget];
+//    self.zoomImageView.image = image;
     recognizer.view.center = CGPointMake(startX + translation.x,
                                          startY + translation.y);
 }

@@ -23,7 +23,7 @@
                                     <constraint firstAttribute="height" constant="30" id="S7T-bG-d6M"/>
                                     <constraint firstAttribute="width" constant="67" id="Vgn-Bk-oY1"/>
                                 </constraints>
-                                <state key="normal" title="Distort">
+                                <state key="normal" title="Deskew">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>

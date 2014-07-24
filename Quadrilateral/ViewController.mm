@@ -49,7 +49,7 @@ struct Quadrilateral{
 @property (weak, nonatomic) IBOutlet UIButton *distortButton;
 @property (weak, nonatomic) IBOutlet UIButton *resetButton;
 @property (weak, nonatomic) IBOutlet UIButton *cameraButton;
-
+@property (nonatomic, strong) UIPanGestureRecognizer *panGesture;
 @end
 
 @implementation ViewController
@@ -73,26 +73,25 @@ struct Quadrilateral{
 
 #pragma mark Private methods
 -(void)setupImage:(UIImage*)image{
+    // Cleanup
+    if(self.imageView){
+        [self.imageView removeGestureRecognizer:self.panGesture];
+        [self.imageView removeFromSuperview];
+    }
     
-    
-    [self.imageView removeFromSuperview];
-    
+    // Default image
     if(image == nil){
         image = [UIImage imageNamed:@"skew"];
     }
     self.imageView = [[UIImageView alloc]initWithImage:image];
     self.imageView.contentMode = UIViewContentModeScaleAspectFit;
-//    self.imageView.contentMode = UIViewContentModeCenter;
-
-//    self.imageView.frame = CGRectMake(0, 0, image.size.width, image.size.height);
     self.imageView.frame = self.view.bounds;
     self.imageView.backgroundColor = [UIColor greenColor];
     
-    UIPanGestureRecognizer *panGesture = [[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(panHandler:)];
-    [self.view addGestureRecognizer:panGesture];
 
     [self.view addSubview:self.imageView];
-    
+
+    // We just covered everything. Bring them to the front.
     [self.view bringSubviewToFront:self.topLeftView];
     [self.view bringSubviewToFront:self.topRightView];
     [self.view bringSubviewToFront:self.bottomLeftView];
@@ -101,10 +100,6 @@ struct Quadrilateral{
     [self.view bringSubviewToFront:self.distortButton];
     [self.view bringSubviewToFront:self.cameraButton];
     
-    self.topLeftView.imageView = self.imageView;
-    self.topRightView.imageView = self.imageView;
-    self.bottomLeftView.imageView  = self.imageView;
-    self.bottomRightView.imageView = self.imageView;
 }
 
 -(void)showCamera{
@@ -139,6 +134,9 @@ struct Quadrilateral{
 
 - (IBAction)cameraButtonTouchUpInside:(id)sender {
     [self showCamera];
+    self.panGesture = [[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(panHandler:)];
+    [self.view addGestureRecognizer:self.panGesture];
+
 }
 
 - (IBAction)resetButtonAction:(id)sender {
@@ -160,14 +158,16 @@ struct Quadrilateral{
     quadFrom.bottomRight.y = self.bottomRightView.center.y / scale;
     
     Quadrilateral quadTo;
-    quadTo.topLeft.x = self.view.bounds.origin.x;
-    quadTo.topLeft.y = self.view.bounds.origin.y;
-    quadTo.topRight.x = self.view.bounds.origin.x + self.view.bounds.size.width;
-    quadTo.topRight.y = self.view.bounds.origin.y;
-    quadTo.bottomLeft.x = self.view.bounds.origin.x;
-    quadTo.bottomLeft.y = self.view.bounds.origin.y + self.view.bounds.size.height;
-    quadTo.bottomRight.x = self.view.bounds.origin.x + self.view.bounds.size.width;
-    quadTo.bottomRight.y = self.view.bounds.origin.y + self.view.bounds.size.height;
+    CGFloat xOffset = self.view.bounds.size.width / 2.0;
+    CGFloat yOffset = self.view.bounds.size.height / 2.0;
+    quadTo.topLeft.x = self.view.bounds.origin.x - xOffset;
+    quadTo.topLeft.y = self.view.bounds.origin.y - yOffset;
+    quadTo.topRight.x = self.view.bounds.origin.x + self.view.bounds.size.width  - xOffset;
+    quadTo.topRight.y = self.view.bounds.origin.y - yOffset;
+    quadTo.bottomLeft.x = self.view.bounds.origin.x - xOffset;
+    quadTo.bottomLeft.y = self.view.bounds.origin.y + self.view.bounds.size.height - yOffset;
+    quadTo.bottomRight.x = self.view.bounds.origin.x + self.view.bounds.size.width - xOffset;
+    quadTo.bottomRight.y = self.view.bounds.origin.y + self.view.bounds.size.height - yOffset;
 
     CATransform3D t = [self transformQuadrilateral:quadFrom toQuadrilateral:quadTo];
 //    t = CATransform3DScale(t, 0.5, 0.5, 1.0);
