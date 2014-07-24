@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface PointView : UIView
-
+@property (nonatomic, strong) UIImageView *imageView;
 @end

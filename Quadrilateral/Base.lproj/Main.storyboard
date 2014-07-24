@@ -33,6 +33,9 @@
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z9f-IS-VSh" customClass="PointView">
                                 <rect key="frame" x="54" y="76" width="44" height="44"/>
                                 <subviews>
+                                    <imageView appearanceType="aqua" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O8q-lR-LSL" userLabel="Image View - zoom">
+                                        <rect key="frame" x="0.0" y="0.0" width="43" height="45"/>
+                                    </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="crosshair" translatesAutoresizingMaskIntoConstraints="NO" id="xKy-73-KQk">
                                         <rect key="frame" x="0.0" y="-1" width="43" height="45"/>
                                     </imageView>
@@ -44,10 +47,16 @@
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="zoomImageView" destination="O8q-lR-LSL" id="ZaI-ME-nX6"/>
+                                </connections>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BUr-bI-8p8" customClass="PointView">
                                 <rect key="frame" x="290" y="149" width="44" height="46"/>
                                 <subviews>
+                                    <imageView appearanceType="aqua" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4sv-FR-Sfa" userLabel="Image View - zoom">
+                                        <rect key="frame" x="0.0" y="1" width="43" height="45"/>
+                                    </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="crosshair" translatesAutoresizingMaskIntoConstraints="NO" id="Fq1-qe-NFi">
                                         <rect key="frame" x="0.0" y="1" width="43" height="45"/>
                                     </imageView>
@@ -59,10 +68,16 @@
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="zoomImageView" destination="4sv-FR-Sfa" id="509-Td-XdE"/>
+                                </connections>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MZG-8I-HYR" customClass="PointView">
                                 <rect key="frame" x="248" y="497" width="44" height="46"/>
                                 <subviews>
+                                    <imageView appearanceType="aqua" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FD2-2R-YAI" userLabel="Image View - zoom">
+                                        <rect key="frame" x="0.0" y="1" width="43" height="45"/>
+                                    </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="crosshair" translatesAutoresizingMaskIntoConstraints="NO" id="Z2C-4i-oji">
                                         <rect key="frame" x="0.0" y="1" width="43" height="45"/>
                                     </imageView>
@@ -74,10 +89,16 @@
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="zoomImageView" destination="FD2-2R-YAI" id="59R-74-lNE"/>
+                                </connections>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DKM-7d-9jV" customClass="PointView">
                                 <rect key="frame" x="-17" y="376" width="44" height="46"/>
                                 <subviews>
+                                    <imageView appearanceType="aqua" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ph9-Oc-pAA" userLabel="Image View - zoom">
+                                        <rect key="frame" x="0.0" y="1" width="43" height="45"/>
+                                    </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="crosshair" translatesAutoresizingMaskIntoConstraints="NO" id="L1u-UF-Kth">
                                         <rect key="frame" x="0.0" y="1" width="43" height="45"/>
                                     </imageView>
@@ -89,6 +110,9 @@
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="zoomImageView" destination="ph9-Oc-pAA" id="lE5-fI-9ry"/>
+                                </connections>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="diE-6j-rl1">
                                 <rect key="frame" x="20" y="480" width="67" height="30"/>

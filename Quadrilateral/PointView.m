@@ -13,7 +13,7 @@
     CGFloat startX;
     CGFloat startY;
 }
-
+@property (weak, nonatomic) IBOutlet UIImageView *zoomImageView;
 @end
 @implementation PointView
 
@@ -35,9 +35,21 @@
         startY = recognizer.view.center.y;
     }
 
-    
+    UIImage *image = [self getTarget];
+    self.zoomImageView.image = image;
     recognizer.view.center = CGPointMake(startX + translation.x,
                                          startY + translation.y);
+}
+
+
+- (UIImage *)getTarget{
+    UIView *view = self.imageView;
+    UIGraphicsBeginImageContextWithOptions(self.bounds.size, view.opaque, 0.0);
+    [view.layer renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage * img = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return img;
 }
 
 

@@ -100,6 +100,11 @@ struct Quadrilateral{
     [self.view bringSubviewToFront:self.resetButton];
     [self.view bringSubviewToFront:self.distortButton];
     [self.view bringSubviewToFront:self.cameraButton];
+    
+    self.topLeftView.imageView = self.imageView;
+    self.topRightView.imageView = self.imageView;
+    self.bottomLeftView.imageView  = self.imageView;
+    self.bottomRightView.imageView = self.imageView;
 }
 
 -(void)showCamera{
