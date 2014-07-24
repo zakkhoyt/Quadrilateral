@@ -20,11 +20,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Quadrilateral/ViewController.mm"
-            timestampString = "427915700.838371"
+            timestampString = "427916928.400119"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "96"
-            endingLineNumber = "96"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
             landmarkName = "-panHandler:"
             landmarkType = "5">
          </BreakpointContent>

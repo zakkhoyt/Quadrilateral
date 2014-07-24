@@ -33,7 +33,7 @@ struct Quadrilateral{
 
 
 
-@interface ViewController (){
+@interface ViewController () <UIImagePickerControllerDelegate, UINavigationControllerDelegate>{
     CGFloat startX;
     CGFloat startY;
 }
@@ -48,6 +48,7 @@ struct Quadrilateral{
 
 @property (weak, nonatomic) IBOutlet UIButton *distortButton;
 @property (weak, nonatomic) IBOutlet UIButton *resetButton;
+@property (weak, nonatomic) IBOutlet UIButton *cameraButton;
 
 @end
 
@@ -58,7 +59,7 @@ struct Quadrilateral{
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    [self setupImage];
+    [self setupImage:nil];
 }
 
 -(void)viewDidAppear:(BOOL)animated{
@@ -70,13 +71,21 @@ struct Quadrilateral{
     // Dispose of any resources that can be recreated.
 }
 
--(void)setupImage{
+#pragma mark Private methods
+-(void)setupImage:(UIImage*)image{
+    
+    
     [self.imageView removeFromSuperview];
-    UIImage *image = [UIImage imageNamed:@"skew"];
+    
+    if(image == nil){
+        image = [UIImage imageNamed:@"skew"];
+    }
     self.imageView = [[UIImageView alloc]initWithImage:image];
-    self.imageView.contentMode = UIViewContentModeScaleToFill;
+    self.imageView.contentMode = UIViewContentModeScaleAspectFit;
 //    self.imageView.contentMode = UIViewContentModeCenter;
-    self.imageView.frame = CGRectMake(0, 0, image.size.width, image.size.height);
+
+//    self.imageView.frame = CGRectMake(0, 0, image.size.width, image.size.height);
+    self.imageView.frame = self.view.bounds;
     self.imageView.backgroundColor = [UIColor greenColor];
     
     UIPanGestureRecognizer *panGesture = [[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(panHandler:)];
@@ -90,8 +99,26 @@ struct Quadrilateral{
     [self.view bringSubviewToFront:self.bottomRightView];
     [self.view bringSubviewToFront:self.resetButton];
     [self.view bringSubviewToFront:self.distortButton];
+    [self.view bringSubviewToFront:self.cameraButton];
 }
 
+-(void)showCamera{
+    
+    UIImagePickerController *picker = [[UIImagePickerController alloc]init];
+    
+    if([UIImagePickerController isCameraDeviceAvailable:UIImagePickerControllerCameraDeviceRear]){
+        picker.sourceType = UIImagePickerControllerSourceTypeCamera;
+    } else {
+        picker.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
+    }
+    
+    picker.allowsEditing = NO;
+    picker.delegate = self;
+    [self presentViewController:picker animated:YES completion:^{}];
+}
+
+
+#pragma mark IBActions
 -(void)panHandler:(UIPanGestureRecognizer*)recognizer{
     CGPoint translation = [recognizer translationInView:recognizer.view.superview];
     if(recognizer.state == UIGestureRecognizerStateBegan){
@@ -104,8 +131,13 @@ struct Quadrilateral{
                                          startY + translation.y);
 }
 
+
+- (IBAction)cameraButtonTouchUpInside:(id)sender {
+    [self showCamera];
+}
+
 - (IBAction)resetButtonAction:(id)sender {
-    [self setupImage];
+    [self setupImage:nil];
 }
 
 
@@ -140,6 +172,9 @@ struct Quadrilateral{
     }];
 
 }
+
+
+
 
 
 #pragma mark OpenCV stuff...
@@ -198,5 +233,28 @@ struct Quadrilateral{
     return transform; 
 }
 
+
+#pragma   mark SMImagePickerControllerDelegate
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info{
+    
+    UIImage *image = [info objectForKey:@"UIImagePickerControllerEditedImage"];
+    if(image == nil){
+        image = [info objectForKey:@"UIImagePickerControllerOriginalImage"];
+    }
+    
+    [self setupImage:image];
+    [picker dismissViewControllerAnimated:YES completion:^{
+    }];
+    
+    
+}
+
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker{
+    [picker dismissViewControllerAnimated:YES completion:^{
+        
+    }];
+    
+}
 
 @end
