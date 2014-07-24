@@ -15,24 +15,6 @@
 		C6B656D31970731F0014DB69 /* QuadrilateralTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B656D21970731F0014DB69 /* QuadrilateralTests.m */; };
 		C6B65739197076B50014DB69 /* PointView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B65738197076B50014DB69 /* PointView.m */; };
 		CF0729C91980EAEF000AA0EC /* UIView_Quadrilateral.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0729C81980EAEF000AA0EC /* UIView_Quadrilateral.m */; };
-		CF072A051980EB34000AA0EC /* AGKCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0729D01980EB34000AA0EC /* AGKCorner.m */; };
-		CF072A071980EB34000AA0EC /* AGKLine.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0729D31980EB34000AA0EC /* AGKLine.m */; };
-		CF072A091980EB34000AA0EC /* AGKMath.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0729D61980EB34000AA0EC /* AGKMath.m */; };
-		CF072A0B1980EB34000AA0EC /* AGKQuad.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0729D91980EB34000AA0EC /* AGKQuad.m */; };
-		CF072A0D1980EB34000AA0EC /* AGKVector3D.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0729DC1980EB34000AA0EC /* AGKVector3D.m */; };
-		CF072A0F1980EB34000AA0EC /* CALayer+AGK+Methods.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0729E11980EB34000AA0EC /* CALayer+AGK+Methods.m */; };
-		CF072A101980EB34000AA0EC /* CALayer+AGK+Properties.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0729E31980EB34000AA0EC /* CALayer+AGK+Properties.m */; };
-		CF072A121980EB34000AA0EC /* CALayer+AGKQuad.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0729E61980EB34000AA0EC /* CALayer+AGKQuad.m */; };
-		CF072A141980EB34000AA0EC /* NSValue+AGKQuad.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0729E91980EB34000AA0EC /* NSValue+AGKQuad.m */; };
-		CF072A161980EB34000AA0EC /* UIBezierPath+AGKQuad.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0729EC1980EB34000AA0EC /* UIBezierPath+AGKQuad.m */; };
-		CF072A171980EB34000AA0EC /* UIImage+AGK+CATransform3D.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0729EE1980EB34000AA0EC /* UIImage+AGK+CATransform3D.m */; };
-		CF072A181980EB34000AA0EC /* UIImage+AGKQuad.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0729F01980EB34000AA0EC /* UIImage+AGKQuad.m */; };
-		CF072A191980EB34000AA0EC /* UIView+AGK+AngleConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0729F21980EB34000AA0EC /* UIView+AGK+AngleConverter.m */; };
-		CF072A1B1980EB34000AA0EC /* UIView+AGK+Properties.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0729F51980EB34000AA0EC /* UIView+AGK+Properties.m */; };
-		CF072A1D1980EB34000AA0EC /* AGKCALayerAnimationBlockDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0729FA1980EB34000AA0EC /* AGKCALayerAnimationBlockDelegate.m */; };
-		CF072A1E1980EB34000AA0EC /* AGKTransformPixelMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0729FC1980EB34000AA0EC /* AGKTransformPixelMapper.m */; };
-		CF072A1F1980EB34000AA0EC /* CGGeometry+AGGeometryKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CF072A001980EB34000AA0EC /* CGGeometry+AGGeometryKit.m */; };
-		CF072A211980EB34000AA0EC /* CGImageRef+AGK+CATransform3D.m in Sources */ = {isa = PBXBuildFile; fileRef = CF072A031980EB34000AA0EC /* CGImageRef+AGK+CATransform3D.m */; };
 		CF072A2319816B12000AA0EC /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF072A2219816B12000AA0EC /* opencv2.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,60 +45,6 @@
 		C6B65738197076B50014DB69 /* PointView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PointView.m; sourceTree = "<group>"; };
 		CF0729C71980EAEF000AA0EC /* UIView_Quadrilateral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIView_Quadrilateral.h; sourceTree = "<group>"; };
 		CF0729C81980EAEF000AA0EC /* UIView_Quadrilateral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIView_Quadrilateral.m; sourceTree = "<group>"; };
-		CF0729CB1980EB34000AA0EC /* AGGeometryKit-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AGGeometryKit-Prefix.pch"; sourceTree = "<group>"; };
-		CF0729CC1980EB34000AA0EC /* AGGeometryKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGGeometryKit.h; sourceTree = "<group>"; };
-		CF0729CD1980EB34000AA0EC /* AGKBitOperations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGKBitOperations.h; sourceTree = "<group>"; };
-		CF0729CE1980EB34000AA0EC /* AGKBitOperationsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGKBitOperationsTest.m; sourceTree = "<group>"; };
-		CF0729CF1980EB34000AA0EC /* AGKCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGKCorner.h; sourceTree = "<group>"; };
-		CF0729D01980EB34000AA0EC /* AGKCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGKCorner.m; sourceTree = "<group>"; };
-		CF0729D11980EB34000AA0EC /* AGKCornerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGKCornerTest.m; sourceTree = "<group>"; };
-		CF0729D21980EB34000AA0EC /* AGKLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGKLine.h; sourceTree = "<group>"; };
-		CF0729D31980EB34000AA0EC /* AGKLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGKLine.m; sourceTree = "<group>"; };
-		CF0729D41980EB34000AA0EC /* AGKLineTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGKLineTest.m; sourceTree = "<group>"; };
-		CF0729D51980EB34000AA0EC /* AGKMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGKMath.h; sourceTree = "<group>"; };
-		CF0729D61980EB34000AA0EC /* AGKMath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGKMath.m; sourceTree = "<group>"; };
-		CF0729D71980EB34000AA0EC /* AGKMathTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGKMathTest.m; sourceTree = "<group>"; };
-		CF0729D81980EB34000AA0EC /* AGKQuad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGKQuad.h; sourceTree = "<group>"; };
-		CF0729D91980EB34000AA0EC /* AGKQuad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGKQuad.m; sourceTree = "<group>"; };
-		CF0729DA1980EB34000AA0EC /* AGKQuadTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGKQuadTest.m; sourceTree = "<group>"; };
-		CF0729DB1980EB34000AA0EC /* AGKVector3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGKVector3D.h; sourceTree = "<group>"; };
-		CF0729DC1980EB34000AA0EC /* AGKVector3D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGKVector3D.m; sourceTree = "<group>"; };
-		CF0729DD1980EB34000AA0EC /* AGKVector3DTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGKVector3DTest.m; sourceTree = "<group>"; };
-		CF0729DF1980EB34000AA0EC /* AGGeometryKitCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGGeometryKitCategories.h; sourceTree = "<group>"; };
-		CF0729E01980EB34000AA0EC /* CALayer+AGK+Methods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+AGK+Methods.h"; sourceTree = "<group>"; };
-		CF0729E11980EB34000AA0EC /* CALayer+AGK+Methods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+AGK+Methods.m"; sourceTree = "<group>"; };
-		CF0729E21980EB34000AA0EC /* CALayer+AGK+Properties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+AGK+Properties.h"; sourceTree = "<group>"; };
-		CF0729E31980EB34000AA0EC /* CALayer+AGK+Properties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+AGK+Properties.m"; sourceTree = "<group>"; };
-		CF0729E41980EB34000AA0EC /* CALayer+AGK+PropertiesTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+AGK+PropertiesTest.m"; sourceTree = "<group>"; };
-		CF0729E51980EB34000AA0EC /* CALayer+AGKQuad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+AGKQuad.h"; sourceTree = "<group>"; };
-		CF0729E61980EB34000AA0EC /* CALayer+AGKQuad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+AGKQuad.m"; sourceTree = "<group>"; };
-		CF0729E71980EB34000AA0EC /* CALayer+AGKQuadTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+AGKQuadTest.m"; sourceTree = "<group>"; };
-		CF0729E81980EB34000AA0EC /* NSValue+AGKQuad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSValue+AGKQuad.h"; sourceTree = "<group>"; };
-		CF0729E91980EB34000AA0EC /* NSValue+AGKQuad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSValue+AGKQuad.m"; sourceTree = "<group>"; };
-		CF0729EA1980EB34000AA0EC /* NSValue+AGKQuadTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSValue+AGKQuadTest.m"; sourceTree = "<group>"; };
-		CF0729EB1980EB34000AA0EC /* UIBezierPath+AGKQuad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+AGKQuad.h"; sourceTree = "<group>"; };
-		CF0729EC1980EB34000AA0EC /* UIBezierPath+AGKQuad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+AGKQuad.m"; sourceTree = "<group>"; };
-		CF0729ED1980EB34000AA0EC /* UIImage+AGK+CATransform3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+AGK+CATransform3D.h"; sourceTree = "<group>"; };
-		CF0729EE1980EB34000AA0EC /* UIImage+AGK+CATransform3D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+AGK+CATransform3D.m"; sourceTree = "<group>"; };
-		CF0729EF1980EB34000AA0EC /* UIImage+AGKQuad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+AGKQuad.h"; sourceTree = "<group>"; };
-		CF0729F01980EB34000AA0EC /* UIImage+AGKQuad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+AGKQuad.m"; sourceTree = "<group>"; };
-		CF0729F11980EB34000AA0EC /* UIView+AGK+AngleConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AGK+AngleConverter.h"; sourceTree = "<group>"; };
-		CF0729F21980EB34000AA0EC /* UIView+AGK+AngleConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AGK+AngleConverter.m"; sourceTree = "<group>"; };
-		CF0729F31980EB34000AA0EC /* UIView+AGK+AngleConverterTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AGK+AngleConverterTest.m"; sourceTree = "<group>"; };
-		CF0729F41980EB34000AA0EC /* UIView+AGK+Properties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AGK+Properties.h"; sourceTree = "<group>"; };
-		CF0729F51980EB34000AA0EC /* UIView+AGK+Properties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AGK+Properties.m"; sourceTree = "<group>"; };
-		CF0729F61980EB34000AA0EC /* UIView+AGK+PropertiesTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AGK+PropertiesTest.m"; sourceTree = "<group>"; };
-		CF0729F81980EB34000AA0EC /* AGGeometryKitClasses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGGeometryKitClasses.h; sourceTree = "<group>"; };
-		CF0729F91980EB34000AA0EC /* AGKCALayerAnimationBlockDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGKCALayerAnimationBlockDelegate.h; sourceTree = "<group>"; };
-		CF0729FA1980EB34000AA0EC /* AGKCALayerAnimationBlockDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGKCALayerAnimationBlockDelegate.m; sourceTree = "<group>"; };
-		CF0729FB1980EB34000AA0EC /* AGKTransformPixelMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGKTransformPixelMapper.h; sourceTree = "<group>"; };
-		CF0729FC1980EB34000AA0EC /* AGKTransformPixelMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGKTransformPixelMapper.m; sourceTree = "<group>"; };
-		CF0729FE1980EB34000AA0EC /* AGGeometryKitCoreGraphics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGGeometryKitCoreGraphics.h; sourceTree = "<group>"; };
-		CF0729FF1980EB34000AA0EC /* CGGeometry+AGGeometryKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CGGeometry+AGGeometryKit.h"; sourceTree = "<group>"; };
-		CF072A001980EB34000AA0EC /* CGGeometry+AGGeometryKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CGGeometry+AGGeometryKit.m"; sourceTree = "<group>"; };
-		CF072A011980EB34000AA0EC /* CGGeometry+AGGeometryKitTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CGGeometry+AGGeometryKitTest.m"; sourceTree = "<group>"; };
-		CF072A021980EB34000AA0EC /* CGImageRef+AGK+CATransform3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CGImageRef+AGK+CATransform3D.h"; sourceTree = "<group>"; };
-		CF072A031980EB34000AA0EC /* CGImageRef+AGK+CATransform3D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CGImageRef+AGK+CATransform3D.m"; sourceTree = "<group>"; };
 		CF072A2219816B12000AA0EC /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../opencv2.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -205,95 +133,8 @@
 			isa = PBXGroup;
 			children = (
 				CF072A2219816B12000AA0EC /* opencv2.framework */,
-				CF0729CA1980EB34000AA0EC /* AGGeometryKit */,
 			);
 			path = ThirdParty;
-			sourceTree = "<group>";
-		};
-		CF0729CA1980EB34000AA0EC /* AGGeometryKit */ = {
-			isa = PBXGroup;
-			children = (
-				CF0729CB1980EB34000AA0EC /* AGGeometryKit-Prefix.pch */,
-				CF0729CC1980EB34000AA0EC /* AGGeometryKit.h */,
-				CF0729CD1980EB34000AA0EC /* AGKBitOperations.h */,
-				CF0729CE1980EB34000AA0EC /* AGKBitOperationsTest.m */,
-				CF0729CF1980EB34000AA0EC /* AGKCorner.h */,
-				CF0729D01980EB34000AA0EC /* AGKCorner.m */,
-				CF0729D11980EB34000AA0EC /* AGKCornerTest.m */,
-				CF0729D21980EB34000AA0EC /* AGKLine.h */,
-				CF0729D31980EB34000AA0EC /* AGKLine.m */,
-				CF0729D41980EB34000AA0EC /* AGKLineTest.m */,
-				CF0729D51980EB34000AA0EC /* AGKMath.h */,
-				CF0729D61980EB34000AA0EC /* AGKMath.m */,
-				CF0729D71980EB34000AA0EC /* AGKMathTest.m */,
-				CF0729D81980EB34000AA0EC /* AGKQuad.h */,
-				CF0729D91980EB34000AA0EC /* AGKQuad.m */,
-				CF0729DA1980EB34000AA0EC /* AGKQuadTest.m */,
-				CF0729DB1980EB34000AA0EC /* AGKVector3D.h */,
-				CF0729DC1980EB34000AA0EC /* AGKVector3D.m */,
-				CF0729DD1980EB34000AA0EC /* AGKVector3DTest.m */,
-				CF0729DE1980EB34000AA0EC /* Categories */,
-				CF0729F71980EB34000AA0EC /* Classes */,
-				CF0729FD1980EB34000AA0EC /* CoreGraphics_Extensions */,
-			);
-			name = AGGeometryKit;
-			path = ../Source;
-			sourceTree = "<group>";
-		};
-		CF0729DE1980EB34000AA0EC /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-				CF0729DF1980EB34000AA0EC /* AGGeometryKitCategories.h */,
-				CF0729E01980EB34000AA0EC /* CALayer+AGK+Methods.h */,
-				CF0729E11980EB34000AA0EC /* CALayer+AGK+Methods.m */,
-				CF0729E21980EB34000AA0EC /* CALayer+AGK+Properties.h */,
-				CF0729E31980EB34000AA0EC /* CALayer+AGK+Properties.m */,
-				CF0729E41980EB34000AA0EC /* CALayer+AGK+PropertiesTest.m */,
-				CF0729E51980EB34000AA0EC /* CALayer+AGKQuad.h */,
-				CF0729E61980EB34000AA0EC /* CALayer+AGKQuad.m */,
-				CF0729E71980EB34000AA0EC /* CALayer+AGKQuadTest.m */,
-				CF0729E81980EB34000AA0EC /* NSValue+AGKQuad.h */,
-				CF0729E91980EB34000AA0EC /* NSValue+AGKQuad.m */,
-				CF0729EA1980EB34000AA0EC /* NSValue+AGKQuadTest.m */,
-				CF0729EB1980EB34000AA0EC /* UIBezierPath+AGKQuad.h */,
-				CF0729EC1980EB34000AA0EC /* UIBezierPath+AGKQuad.m */,
-				CF0729ED1980EB34000AA0EC /* UIImage+AGK+CATransform3D.h */,
-				CF0729EE1980EB34000AA0EC /* UIImage+AGK+CATransform3D.m */,
-				CF0729EF1980EB34000AA0EC /* UIImage+AGKQuad.h */,
-				CF0729F01980EB34000AA0EC /* UIImage+AGKQuad.m */,
-				CF0729F11980EB34000AA0EC /* UIView+AGK+AngleConverter.h */,
-				CF0729F21980EB34000AA0EC /* UIView+AGK+AngleConverter.m */,
-				CF0729F31980EB34000AA0EC /* UIView+AGK+AngleConverterTest.m */,
-				CF0729F41980EB34000AA0EC /* UIView+AGK+Properties.h */,
-				CF0729F51980EB34000AA0EC /* UIView+AGK+Properties.m */,
-				CF0729F61980EB34000AA0EC /* UIView+AGK+PropertiesTest.m */,
-			);
-			path = Categories;
-			sourceTree = "<group>";
-		};
-		CF0729F71980EB34000AA0EC /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				CF0729F81980EB34000AA0EC /* AGGeometryKitClasses.h */,
-				CF0729F91980EB34000AA0EC /* AGKCALayerAnimationBlockDelegate.h */,
-				CF0729FA1980EB34000AA0EC /* AGKCALayerAnimationBlockDelegate.m */,
-				CF0729FB1980EB34000AA0EC /* AGKTransformPixelMapper.h */,
-				CF0729FC1980EB34000AA0EC /* AGKTransformPixelMapper.m */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		CF0729FD1980EB34000AA0EC /* CoreGraphics_Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				CF0729FE1980EB34000AA0EC /* AGGeometryKitCoreGraphics.h */,
-				CF0729FF1980EB34000AA0EC /* CGGeometry+AGGeometryKit.h */,
-				CF072A001980EB34000AA0EC /* CGGeometry+AGGeometryKit.m */,
-				CF072A011980EB34000AA0EC /* CGGeometry+AGGeometryKitTest.m */,
-				CF072A021980EB34000AA0EC /* CGImageRef+AGK+CATransform3D.h */,
-				CF072A031980EB34000AA0EC /* CGImageRef+AGK+CATransform3D.m */,
-			);
-			path = CoreGraphics_Extensions;
 			sourceTree = "<group>";
 		};
 		CF072A241981722F000AA0EC /* View */ = {
@@ -428,28 +269,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF072A051980EB34000AA0EC /* AGKCorner.m in Sources */,
-				CF072A0B1980EB34000AA0EC /* AGKQuad.m in Sources */,
-				CF072A1D1980EB34000AA0EC /* AGKCALayerAnimationBlockDelegate.m in Sources */,
 				C6B656C21970731F0014DB69 /* ViewController.mm in Sources */,
 				CF0729C91980EAEF000AA0EC /* UIView_Quadrilateral.m in Sources */,
-				CF072A0D1980EB34000AA0EC /* AGKVector3D.m in Sources */,
-				CF072A1F1980EB34000AA0EC /* CGGeometry+AGGeometryKit.m in Sources */,
-				CF072A101980EB34000AA0EC /* CALayer+AGK+Properties.m in Sources */,
-				CF072A211980EB34000AA0EC /* CGImageRef+AGK+CATransform3D.m in Sources */,
-				CF072A1E1980EB34000AA0EC /* AGKTransformPixelMapper.m in Sources */,
 				C6B65739197076B50014DB69 /* PointView.m in Sources */,
-				CF072A1B1980EB34000AA0EC /* UIView+AGK+Properties.m in Sources */,
-				CF072A121980EB34000AA0EC /* CALayer+AGKQuad.m in Sources */,
-				CF072A171980EB34000AA0EC /* UIImage+AGK+CATransform3D.m in Sources */,
-				CF072A191980EB34000AA0EC /* UIView+AGK+AngleConverter.m in Sources */,
-				CF072A091980EB34000AA0EC /* AGKMath.m in Sources */,
 				C6B656BF1970731F0014DB69 /* AppDelegate.m in Sources */,
-				CF072A161980EB34000AA0EC /* UIBezierPath+AGKQuad.m in Sources */,
-				CF072A0F1980EB34000AA0EC /* CALayer+AGK+Methods.m in Sources */,
-				CF072A141980EB34000AA0EC /* NSValue+AGKQuad.m in Sources */,
-				CF072A181980EB34000AA0EC /* UIImage+AGKQuad.m in Sources */,
-				CF072A071980EB34000AA0EC /* AGKLine.m in Sources */,
 				C6B656BC1970731F0014DB69 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
